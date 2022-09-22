@@ -4,32 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!--Imagen-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dog_meme" />
+
+    <!--Textp-->
     <TextView
-        android:layout_width="117dp"
-        android:layout_height="104dp"
-        android:text="Hola. ¿Cual es tu edad?"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="16dp"
+        android:text="@string/how_old_are_you"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/Edad_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_your_age"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/Calcular_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="117dp"
-        android:layout_height="104dp"
-        android:layout_weight="1"
-        android:text="Hola. ¿Cual es tu edad?"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:id="@+id/Respuesta_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="293dp"
+        android:gravity="center_horizontal"
+        android:text="@string/your_dog_age_is"
+        android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="117dp"
-        android:layout_height="104dp"
-        android:layout_weight="1"
-        android:text="Hola. ¿Cual es tu edad?"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+
 </LinearLayout>
 
 
