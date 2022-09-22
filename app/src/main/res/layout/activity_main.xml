@@ -52,7 +52,6 @@
         android:text="@string/your_dog_age_is"
         android:textSize="20dp" />
 
-
 </LinearLayout>
 
 
