@@ -1,57 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!--Imagen-->
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/dog_meme" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <!--Textp-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:padding="16dp"
-        android:text="@string/how_old_are_you"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30dp" />
+        <!--Imagen-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dog_meme" />
 
-    <EditText
-        android:id="@+id/Edad_EditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/type_your_age"
-        android:inputType="number"
-        android:padding="16dp"
-        android:textAlignment="center" />
+        <!--Textp-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="16dp"
+            android:text="@string/how_old_are_you"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/Calcular_Btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/calculate"
-        android:textAllCaps="false"
-        android:textSize="18dp" />
+        <EditText
+            android:id="@+id/Edad_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_your_age"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/Respuesta_TextView"
-        android:layout_width="match_parent"
-        android:layout_height="293dp"
-        android:gravity="center_horizontal"
-        android:text="@string/your_dog_age_is"
-        android:textSize="20dp" />
+        <Button
+            android:id="@+id/Calcular_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/calculate"
+            android:textAllCaps="false"
+            android:textSize="18dp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/Respuesta_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="293dp"
+            android:gravity="center_horizontal"
+            android:text="@string/your_dog_age_is"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</layout>
 
 
