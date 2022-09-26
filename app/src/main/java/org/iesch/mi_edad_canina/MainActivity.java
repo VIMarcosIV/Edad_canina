@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         Log.v("DAM", "MainActivity cargada con éxito");
          */
 
-
         binding.CalcularBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
