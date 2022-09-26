@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
         // findViewById es para enlazar los elementos del XML con los del .java
        // EditText ageEdit = findViewById(R.id.Edad_EditText); // R porque es un registro de android donde se guardan todas las variables
        // Button btnCalculate = findViewById(R.id.Calcular_Btn);
